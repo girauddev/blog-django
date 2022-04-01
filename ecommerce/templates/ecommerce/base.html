@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Emperor - Ecommerce</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'ecommerce/assets/favicon.ico' %}" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'ecommerce/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Incluimos NavBar -->
+        {% include 'ecommerce/components/navbar.html' %}
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Emperor</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Los mejores productos gamers para que te subas a la GLORIUS PC MASTER RACE</p>
+                </div>
+            </div>
+        </header>
+        <!-- Sección de prodcutos-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <!-- Modulo Mouse -->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://us.123rf.com/450wm/milanteann/milanteann1701/milanteann170100021/69375023-rat%C3%B3n-de-ordenador-de-alta-tecnolog%C3%ADa-juego-en-tono-azul-con-reflaction.jpg?ver=6" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Mouses</h5>
+                                    <!-- Product price-->
+                                    <p>Los mejores mouse gamers para tu setup</p>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/ecommerce/mouses/">Quiero ver Mouses</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modulo Display -->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvrEJ2O3LDpq3hRa6v2vlnR-Wq0Xvwf9sgdVkLVCX0Ujj-gxmNqGpHKZSgagwPnB-W-pk&usqp=CAU" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Displays</h5>
+                                    <!-- Product price-->
+                                    <p>Desde monitores curvos hasta de 144hz. ¡Y AMBOS TAMBIEN!</p>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/ecommerce/displays/">Quiero ver Displays</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modulo Headphones -->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://us.123rf.com/450wm/julioaldana/julioaldana2007/julioaldana200700030/152078396-.jpg?ver=6" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Headphones</h5>
+                                    <!-- Product price-->
+                                    <p>Sentite adentro del juego con el mejor catálogo de headphones del mercado</p>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/ecommerce/headphones/">Quiero ver Headphones</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pie de página-->
+        {% include 'ecommerce/components/footer.html' %}
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'ecommerce/js/scripts.js' %}"></script>
+    </body>
+</html>
